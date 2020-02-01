@@ -11,15 +11,6 @@ def mfr(uint):
         if uint[i]=='*':
             temp+=str(i)+','
     return temp+"..."
-"""def marked_for_rev(uint):
-    i=1
-    temp=""
-    while i<=75:
-        if uint[i]=="*":
-            temp+=" "+str(i)
-        else:
-            i+=1
-"""
 
 import time
 test_name=str(raw_input("Enter the name of test: "))
