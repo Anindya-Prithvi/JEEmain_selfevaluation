@@ -16,3 +16,5 @@ upon every update.
 
 The analysis program is a rather straight forward one to save the analysis of the user's paper just after completion of a test.
 This program is a standalone too, so it can be run without running the Answer key program.
+
+Requires numpy and python 2.7 or python 3+
