@@ -6,9 +6,9 @@ while True:
         timeaft=time.time()
         if timeaft>=timed+60:
             l+=1
-            print "A minute has passed; time passed=", l ,"minutes"
+            print( "A minute has passed; time passed=", l ,"minutes")
             ls=("|"*l)
-            print ls.strip()
+            print(ls.strip())
             break
         else:
             time.sleep(1)
