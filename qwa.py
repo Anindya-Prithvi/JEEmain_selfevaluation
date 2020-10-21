@@ -9,4 +9,3 @@ def analyzergraph(nam,timeq):
     pl.bar(X,Y)
     pl.show()
     pl.title(nam)
-    pl.savefig(str(nam))
