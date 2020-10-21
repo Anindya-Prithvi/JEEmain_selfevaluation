@@ -14,7 +14,12 @@ The features of the answer key program include:
    4. Time elapsed in total from start of the test.
 upon every update.
 
+*It is advised that users should familiarize themselves with the program prior to attempting the question paper.*
+
 The analysis program is a rather straight forward one to save the analysis of the user's paper just after completion of a test.
 This program is a standalone too, so it can be run without running the Answer key program.
 
-Requires numpy and python 2.7 or python 3+
+Requires matplotlib and [PYTHON 3+](https://www.python.org/)
+
+To install matplotlib, open command prompt/shell (windows button + r and write cmd, press enter). In the shell, write
+<pre> pip install matplotlib </pre>
