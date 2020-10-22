@@ -14,3 +14,4 @@ analyzed="\n"+punch + "\n" +testname+"\n"+comments+"\n"+strong+"\n"+weak+"\n"+wo
 print(analyzed)
 analysis.write(analyzed)
 print("written in Analysis.txt")
+time.sleep(100000000)
