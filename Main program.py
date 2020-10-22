@@ -24,7 +24,6 @@ import time
 test_name=str(input("Enter the name of test: "))
 answer_key=[None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None]
 time_key=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-qwa.analyzergraph(test_name,time_key)
 answer_key[0]=test_name
 fileis= test_name+".akey"
 print("""
@@ -32,12 +31,12 @@ To terminate type TERMINATE
 To mark for review an answer type * in the input for the specific question
 To see key type SHOWKEY""")
 prompt=str(input("Would you like to start your test? (y/n): "))
-if prompt=="y":
+if prompt=="y" or prompt=="Y":
     start=time.time()
     while True:
         reqt=time.time()
         end=time.time()
-        response=(input("Enter question number: "))
+        response=(input("\nEnter question number: "))
         if response=="TERMINATE":
             break
         elif response=="SHOWKEY":
@@ -79,3 +78,5 @@ savekey.close()
 print("OPENING ANALYZER")
 qwa.analyzergraph(test_name,time_key)
 exec(open('Analyzer.py').read())
+print("\nYou can close this now")
+time.sleep(1000000)
