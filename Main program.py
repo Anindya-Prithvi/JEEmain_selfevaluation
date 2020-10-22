@@ -70,7 +70,7 @@ Probable errors:
 else:
     while True:
         print("Close program")
-print(answer_key, time_key)
+print("This is the answer key--> \n",answer_key,'\n and this is the time taken in every question', time_key)
 print("Time elapsed so far is ",end-start,"seconds out of 10800")
 fileis= test_name+".akey"
 savekey=open(fileis,"w")
