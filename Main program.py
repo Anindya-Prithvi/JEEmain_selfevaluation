@@ -27,7 +27,7 @@ time_key=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 answer_key[0]=test_name
 fileis= test_name+".akey"
 print("""
-To terminate type TERMINATE
+To terminate type TERMINATE (in place of question number)
 To mark for review an answer type * in the input for the specific question
 To see key type SHOWKEY""")
 prompt=str(input("Would you like to start your test? (y/n): "))
@@ -77,6 +77,6 @@ savekey.write(str(answer_key))
 savekey.close()
 print("OPENING ANALYZER")
 qwa.analyzergraph(test_name,time_key)
-exec(open('Analyzer.py').read())
-print("\nYou can close this now")
-time.sleep(1000000)
+os.startfile('Analyzer.py')
+print("\nYou can close this now OR it will close automatically \nin 60 seconds")
+time.sleep(60)
