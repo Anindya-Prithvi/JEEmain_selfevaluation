@@ -22,4 +22,4 @@ print("The name of the question set is ",a[0])
 for i in range(0,75):
     print("The answer given for question number" ,i+1,"is",a[i+1])
 os.remove('k.py')
-time.sleep(10000000)
+time.sleep(1000000)
