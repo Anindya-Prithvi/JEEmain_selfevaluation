@@ -13,5 +13,6 @@ note="Special Note :"+str(input("Enter any notes for the test :"))
 analyzed="\n"+punch + "\n" +testname+"\n"+comments+"\n"+strong+"\n"+weak+"\n"+work+"\n"+note+"\n"+"Evaluation Ended"+"\n"
 print(analyzed)
 analysis.write(analyzed)
+analysis.close()
 print("written in Analysis.txt\nYou can close this now \nOR it will close in 60 seconds")
 time.sleep(60)
