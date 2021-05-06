@@ -1,3 +1,6 @@
+#made by Anindya Prithvi
+#son of Biplab Kumar Naskar and Anindita Naskar
+
 import os,qwa
 os.startfile(r"te.py")
 
