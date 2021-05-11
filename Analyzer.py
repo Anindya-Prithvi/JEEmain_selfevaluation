@@ -14,5 +14,5 @@ analyzed="\n"+punch + "\n" +testname+"\n"+comments+"\n"+strong+"\n"+weak+"\n"+wo
 print(analyzed)
 analysis.write(analyzed)
 analysis.close()
-print("written in Analysis.txt\nYou can close this now \nOR it will close in 60 seconds")
-time.sleep(60)
+print("written in Analysis.txt\nYou can close this now \nOR it will close in 120 seconds")
+time.sleep(120)
