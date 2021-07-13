@@ -35,8 +35,8 @@ def mfr(uint: int) -> str:
 
 
 test_name = str(input("Enter the name of test: "))
-answer_key = [None]*76
-time_key = [0]*75
+answer_key = [None] * 76
+time_key = [0] * 75
 
 answer_key[0] = test_name
 fileis = test_name + ".akey"
